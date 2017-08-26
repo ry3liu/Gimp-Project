@@ -1,0 +1,178 @@
+/* General Rules, I have downloaded a new font for use*/
+
+body,html{
+	height:100%;
+}
+
+body{
+font-family: 'Slabo 27px', serif;
+font-size:100%;
+background:url("blackBackground.jpg");
+background-attachment:fixed;
+
+}
+#header{
+	height:100%;
+}
+
+#content{
+	height:100%;
+	width:100%;
+}
+
+#header p{
+	font-size:20px;
+	font-weight:bolder;
+}
+
+#content-box{
+	font-weight:bolder;
+	text-align:center;
+	padding:2em;
+	max-width: 600px;
+    min-width: 100px;
+	position:absolute;
+	right:30%;
+	top:40%;
+	
+}
+
+#wrapper{
+	height:100%;
+	background:url("photoEditing.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	
+}
+
+#header img{ 	/*gimp photo*/
+	width:50px;
+	display:inline;
+}
+				/*header*/
+#content p:hover{
+	color:white;
+}
+
+				/*End of Nav Bar */
+
+
+.navbar{
+	/*background-color:transparent;*/
+	border:0;
+	padding:5px;
+}
+
+.navbar button{
+	
+	background-color:blue;
+}
+
+/* Now the imgs */
+
+#photo{
+	padding:3em 2em;
+	
+}
+
+#photo img{
+	display:inline;
+	width:100%;
+	height:30em;
+	margin:2em 0;
+	border-radius:2em;
+	transition:transform 2s ease-in-out;
+}
+
+#photo img:hover{
+	opacity:0.8;
+	transform:scale(1.3);
+	
+}
+
+.col-md-4{
+	position:relative;
+}
+
+
+
+
+/* Here is my profile card */
+
+.card{
+	box-shadow:0 4px 8px 0 rgba(255,0,0,0.2);
+	max-width:400px;
+	margin:auto;
+	text-align:center;
+	font-family:Times New Roman;
+	background-color:white;
+	border-bottom-style:outset;
+	border-width:3px;
+	height:53em;
+	padding:10px;
+}
+
+.container{
+	padding:0, 22px;
+}
+
+container::after{
+	clear:both;
+}
+
+.title{
+	color:grey;
+	font-size:18px;
+}
+
+.myPhoto{
+	width:100%;
+}
+.container #hobbie{
+	font-size:16px;
+}
+
+/*here ends the card*/
+/*here begin the map*/
+
+.p{
+	color:darkgrey;
+}
+
+.map{
+	background-color:white;
+	height:53em;
+	
+}
+
+
+/*Here ends the map*/
+/*Here begins the footer*/
+
+.listIcon{
+	
+	list-style:none;
+}
+
+.listIcon li{
+	display:inline-block;
+	font-size:20px;
+	padding:10px;
+	font-family: 'Merriweather', serif;
+	color:blue;
+	
+}
+
+.center{
+	text-align:center;
+}
+
+
+
+footer h2{
+	
+	padding-top:60px;
+	color:white;
+}
+
