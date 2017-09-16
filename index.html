@@ -18,21 +18,36 @@
 		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 		<!-- Add CSS Animation-->
+		<!--
 		<link rel="stylesheet" href="animate.css">
+		
+		-->
 	</head>
 	
 	<body>
-		<section id="header" class="wow flipOutY" data-wow-duration="5s">
-			<div id="wrapper">
-			<nav class="navbar navbar-default" role="navigation" >
-				<a class="navbar-brand" href="#"> Gimp Story <img src="gimpIcon.png" class="img-responsive" alt="gimp logo"> </a>
 	
+		<section id="header" class="wow flipOutY" data-wow-duration="4s">
+			<div id="wrapper">
+			<nav class="navbar navbar-default " role="navigation" >
+				<div class="containter-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"> Gimp Story <img src="gimpIcon.png" class="img-responsive" alt="gimp logo"> </a>
+			</div>
+			
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#content" class="active"> Home</a></li>
+					<li><a href="#photo"> Pictures</a></li>
+					<li><a href="#other"> Story </a></li>
+					<li><a href="#more"> More</a></li>
+				</ul>
+			
+				</div>
 			</nav>
 		
 	<!--End of Navigation-->
 		<div id="content">
 			<div id="content-box">
-					<p > I  interested in photo-editing, 
+					<p > I  am interested in photo-editing, 
 					this summer I took some time to learn Gimp, 
 					which is a free alternative to Photoshop. 
 					Below is the array of photos that I have edited.
@@ -49,7 +64,7 @@
 	<section id="photo">
 		<div class="container">
 			<div class="row"> </div>
-				<div class="col-md-4 col-sm-6 wow fadeInLeftBig" data-wow-duration="4s" data-wow-delay="1s">
+				<div class="col-md-4 col-sm-6 wow fadeInLeftBig" data-wow-duration="4s" data-wow-delay="0s">
 					
 				<a href="#" data-featherlight="AnotherOrange face.png"> <img src="AnotherOrange face.png" alt="orangeFace" 
 					class="img-responsive"></a>
@@ -123,7 +138,7 @@
 	</section>
 	
 	
-	<section >
+	<section id="other" >
 	<!-- End of Photo Display -->
 	<!--Beginning of My Contact Card-->
 	
@@ -131,7 +146,7 @@
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="card wow rotateIn" data-wow-duration="7s" data-wow-delay="1s"">
-					<img src="AnotherredAppleFaceWithEnhance.png" alt="my photo" class="myPhoto"  >
+					<img src="myPic.jpg" alt="my photo" class="myPhoto"  >
 						<h1> Ruo Yu (Joyce) Liu</h1>
 						<p class="title"> 2nd Year Electrical Engineering Student, University of Waterloo</p>
 						<p id="hobbie">Hobbies: Cooking Delicious Food, Reading Historical Novels While Drinking Tea</p>
@@ -139,7 +154,7 @@
 				</div>
 			
 			
-				<div class="col-sm-6 map wow rotateInUpRight" data-wow-duration="4s" data-wow-delay="1s">
+				<div class="col-sm-6 map wow rotateInUpRight" data-wow-duration="4s" data-wow-delay="0s">
 					<h1 class="p"> Here I am</h1>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.4400855817785!2d-80.54704628513993!3d43.47228537912788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6ad02edccff%3A0xdd9df23996268e17!2sUniversity+of+Waterloo!5e0!3m2!1sen!2sus!4v1501577401766" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
@@ -152,13 +167,13 @@
 	
 	
 	<footer>
-		<div class="container center distance wow zoomInUp" data-wow-duration="8s" data-wow-delay="1s">
+		<div id="more" class="container center  distance wow zoomInUp" data-wow-duration="3s" data-wow-delay="0s">
 			<h2> Follow Me </h2>
 			<ul class="listIcon ">
-				<li> <a href="#"> <i class="fa fa-github fa-5x"></i><br> Github</a></li>
-				<li> <a href="#"> <i class="fa fa-linkedin fa-5x"></i><br>LinkedIn</a></li>
-				<li> <a href="#"> <i class="fa fa-envelope fa-5x"> </i><br>ry3liu@edu.uwaterloo.ca</a> </li>
-				<li> <a href="#"> <i class="fa fa-file fa-5x"></i><br> Resume </a></li>
+				<li> <a href="https://github.com/ry3liu"  target="_blank"> <i class="fa fa-github fa-3x"></i><br> Github</a></li>
+				<li> <a href="#"> <i class="fa fa-linkedin fa-3x"></i><br>LinkedIn</a></li>
+				<li> <a href="#"> <i class="fa fa-envelope fa-3x"> </i><br>ry3liu@edu.uwaterloo.ca</a> </li>
+				<li> <a href="Resume Joyce Liu.pdf"  target="_blank"> <i class="fa fa-file fa-3x"></i><br> Resume </a></li>
 			</ul>
 	
 		</div>
@@ -171,6 +186,7 @@
     <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<!--Here is a jQuery plugin-->
 	<script src="featherlight.min.js"> </script>
+	<script src="action.js"></script>
 	
 	<!--the wow.js requires purchase if used for commercial purpose-->
 	<script src="wow.min.js"></script>

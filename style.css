@@ -5,7 +5,7 @@ body,html{
 }
 
 body{
-font-family: 'Slabo 27px', serif;
+font-family: 'Slabo 33px', serif;
 font-size:100%;
 background:url("blackBackground.jpg");
 background-attachment:fixed;
@@ -13,6 +13,39 @@ background-attachment:fixed;
 }
 #header{
 	height:100%;
+}
+
+body li{
+	display:inline;
+	float:right;
+
+}
+
+body li a{
+	margin:0 auto;
+	letter-spacing:1px;
+	color:green;
+	padding: 36px 50px 34px 50px;
+	font-size:33px;
+	
+	
+}
+
+/*
+.active{
+	font-weight:bold;
+}*/
+
+body ul{
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	display:flex;
+	align-items:flex-end;
+	
+	
+	
 }
 
 #content{
@@ -34,6 +67,9 @@ background-attachment:fixed;
 	position:absolute;
 	right:30%;
 	top:40%;
+	background-color:rgba(240, 248, 255, 0.2);
+	
+	
 	
 }
 
@@ -44,6 +80,7 @@ background-attachment:fixed;
 	background-position:center;
 	background-size:cover;
 	
+	
 }
 
 #header img{ 	/*gimp photo*/
@@ -52,7 +89,8 @@ background-attachment:fixed;
 }
 				/*header*/
 #content p:hover{
-	color:white;
+	color:navy;
+	
 }
 
 				/*End of Nav Bar */
@@ -62,6 +100,17 @@ background-attachment:fixed;
 	/*background-color:transparent;*/
 	border:0;
 	padding:5px;
+	
+	/*position:fixed;*/
+	top:0;
+	width:100%;
+	z-index:999;
+	
+	border-bottom:double 4px grey;
+	display:flex;
+	
+	font-weight:bold;
+	opacity:0.7;
 }
 
 .navbar button{
@@ -102,7 +151,8 @@ background-attachment:fixed;
 
 .card{
 	box-shadow:0 4px 8px 0 rgba(255,0,0,0.2);
-	max-width:400px;
+	max-width:350px;
+	height:auto;
 	margin:auto;
 	text-align:center;
 	font-family:Times New Roman;
@@ -157,10 +207,12 @@ container::after{
 
 .listIcon li{
 	display:inline-block;
-	font-size:20px;
+	font-size:16px;
 	padding:10px;
 	font-family: 'Merriweather', serif;
 	color:blue;
+	text-align:left;
+	margin:15px auto;
 	
 }
 
